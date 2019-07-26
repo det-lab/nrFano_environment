@@ -1,6 +1,5 @@
 FROM continuumio/miniconda3
 
-RUN cd home
 RUN echo "name: nr_fano" > nr_fano_env.yml
 RUN echo " dependencies:" >> nr_fano_env.yml
 RUN echo "   - python>=3.6" >> nr_fano_env.yml
