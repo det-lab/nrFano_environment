@@ -27,5 +27,5 @@ RUN echo "      - bootstrapped" >> nr_fano_env.yml
 
 RUN conda config --set always_yes yes --set changeps1 no
 #RUN conda env create -n test-environment -f nr_fano_env.yml
-RUN conda create -n test-environment && \
-    conda activate test-environment
+RUN 'conda create -n test-environment; \
+     conda activate test-environment'
